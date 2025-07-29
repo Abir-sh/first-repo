@@ -96,3 +96,17 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+.underline-gradient {
+  position: relative;
+  display: inline-block;
+}
+.underline-gradient::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px; /* زيادة المسافة مشان الخط ما يلمس الكلمة */
+  height: 8px; /* زيادة سمك الخط */
+  width: 100%;
+  background: linear-gradient(to right, #00ffd9, #3b82f6, #8b5cf6);
+}
+
